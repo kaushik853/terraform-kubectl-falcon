@@ -41,7 +41,6 @@ locals {
       advanced:
         autoUpdate: "force"
       backend: ${var.node_sensor_mode}
-      version: "7.17.0"
   EOT
   default_container_sensor_manifest = <<EOT
   apiVersion: falcon.crowdstrike.com/v1alpha1
