@@ -32,12 +32,15 @@ locals {
       tags:
       - daemonset
       - ${var.environment}
-      trace: none
+      trace: debug
     falcon_api:
       client_id: ${var.client_id}
       client_secret: ${var.client_secret}
       cloud_region: autodiscover
     node:
+      advanced:
+        properties:
+          autoUpdate: "normal"
       backend: ${var.node_sensor_mode}
   EOT
   default_container_sensor_manifest = <<EOT
