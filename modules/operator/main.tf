@@ -39,8 +39,7 @@ locals {
       cloud_region: autodiscover
     node:
       advanced:
-        properties:
-          autoUpdate: "normal"
+        autoUpdate: "force"
       backend: ${var.node_sensor_mode}
   EOT
   default_container_sensor_manifest = <<EOT
