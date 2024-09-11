@@ -29,6 +29,8 @@ locals {
     namespace: falcon-operator
   spec:
     falcon:
+      cid: ${var.cid}
+      provisioning_token: ${var.provisioning_token}
       tags:
       - daemonset
       - ${var.environment}
