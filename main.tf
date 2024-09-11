@@ -9,6 +9,8 @@ module "falcon_operator" {
   falcon_admission                   = var.falcon_admission
   operator_version                   = var.operator_version
   node_sensor_mode                   = var.node_sensor_mode
+  cid                                = var.cid
+  provisioning_token                 = var.provisioning_token
   node_sensor_manifest_path          = var.node_manifest_path
   container_sensor_manifest_path     = var.container_sensor_manifest_path
   admission_controller_manifest_path = var.admission_controller_manifest_path
