@@ -31,6 +31,11 @@ variable "cid" {
   description = "Customer ID (CID) of the Falcon platform."
 }
 
+variable "provisioning_token" {
+  type        = string
+  description = "ptoken of the Falcon platform."
+}
+
 variable "cloud" {
   type        = string
   description = "Falcon Cloud Region to use."
