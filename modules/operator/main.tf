@@ -30,7 +30,7 @@ locals {
   spec:
     falcon:
       cid: ${var.cid}
-      provisioning_token: ${var.provisioning_token}
+      provisioning_token: ${tostring(var.provisioning_token)}
       tags:
       - daemonset
       - ${var.environment}
