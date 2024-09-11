@@ -21,6 +21,16 @@ variable "client_secret" {
   sensitive   = true
 }
 
+variable "cid" {
+  type        = string
+  description = "cid of the Falcon platform."
+}
+
+variable "provisioning_token" {
+  type        = string
+  description = "ptoken of the Falcon platform."
+}
+
 variable "environment" {
   description = "Environment or 'Alias' tag"
   type        = string
