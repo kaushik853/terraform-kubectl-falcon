@@ -58,6 +58,7 @@ module "crowdstrike_falcon" {
   docker_api_token = var.docker_api_token
   sensor_type      = var.sensor_type
   operator_version = var.operator_version
+  provisioning_token = var.provisioning_token
 }
 
 #---------------------------------------------------------------
