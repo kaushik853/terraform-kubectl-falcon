@@ -55,6 +55,12 @@ variable "node_sensor_mode" {
 
 }
 
+variable "autopilot_status" {
+  description = "gke autopilot in node"
+  type        = bool
+  default     = false
+}
+
 variable "falcon_admission" {
   description = "Whether to deploy the FalconAdmission Custom Resource (CR) to the cluster."
   type        = bool
