@@ -52,6 +52,13 @@ variable "sensor_type" {
   }
 }
 
+variable "autopilot_status" {
+  description = "gke autopilot in node"
+  type        = bolean
+  default     = false
+}
+
+
 variable "environment" {
   description = "Environment or 'Alias' tag"
   type        = string
