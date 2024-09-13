@@ -54,7 +54,7 @@ variable "sensor_type" {
 
 variable "autopilot_status" {
   description = "gke autopilot in node"
-  type        = bolean
+  type        = bool
   default     = false
 }
 
